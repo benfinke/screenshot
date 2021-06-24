@@ -1,5 +1,3 @@
-// +build go1.10
-
 package screenshot
 
 /*
@@ -11,7 +9,7 @@ void* CompatCGDisplayCreateImageForRect(CGDirectDisplayID display, CGRect rect) 
 }
 
 void CompatCGImageRelease(void* image) {
-	CGImageRelease(image);	
+	CGImageRelease(image);
 }
 
 void* CompatCGImageCreateCopyWithColorSpace(void* image, CGColorSpaceRef space) {
